@@ -12,21 +12,21 @@ collapse_btn.addEventListener('click', function () {
 })
 
 
-var latitude = 0;
-var longitude = 0;
-if ("geolocation" in navigator) {
-  // الحصول على الموقع الجغرافي للمستخدم
-  navigator.geolocation.getCurrentPosition(function (p) {
-    latitude = p.coords.latitude;
-    longitude = p.coords.longitude;
-    current_location_Weather(`${latitude},${longitude}`)
-    // يمكنك استخدام الإحداثيات للقيام بالإجراءات التي تريدها هنا
-  }, function () {
-    current_location_Weather(`التجمع`)
-  });
-} else {
-  console.log("المتصفح لا يدعم واجهة geolocation");
-}
+// var latitude = 0;
+// var longitude = 0;
+// if ("geolocation" in navigator) {
+//   // الحصول على الموقع الجغرافي للمستخدم
+//   navigator.geolocation.getCurrentPosition(function (p) {
+//     latitude = p.coords.latitude;
+//     longitude = p.coords.longitude;
+//     current_location_Weather(`${latitude},${longitude}`)
+//     // يمكنك استخدام الإحداثيات للقيام بالإجراءات التي تريدها هنا
+//   }, function () {
+//     current_location_Weather(`التجمع`)
+//   });
+// } else {
+//   console.log("المتصفح لا يدعم واجهة geolocation");
+// }
 
 
 
