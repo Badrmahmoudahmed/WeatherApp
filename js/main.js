@@ -41,7 +41,7 @@ let current_location = [];
 let forecastA = [];
 
 async function current_location_Weather(ele) {
-  var x = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=390f2919780a4f95ba8172704230808&q=` + ele + `&days=3&aqi=no&alerts=no`);
+  var x = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=390f2919780a4f95ba8172704230808&q=` + ele + `&days=3&aqi=no&alerts=no`);
   // var x = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=390f2919780a4f95ba8172704230808&q=30.0960074&days=3&aqi=no&alerts=no`);
   var res = await x.json();
   console.log(res);
